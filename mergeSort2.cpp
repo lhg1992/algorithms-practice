@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define  N 200000000
-int*L=(int *) malloc(sizeof(int) *(N/2+1)); //int L[N/2+1]; L¡¢RµÄÔªËØ¸öÊý²»³¬¹ýN/2+1 
+int*L=(int *) malloc(sizeof(int) *(N/2+1)); //int L[N/2+1]; LÂ¡Â¢RÂµÃ„Ã”ÂªÃ‹Ã˜Â¸Ã¶ÃŠÃ½Â²Â»Â³Â¬Â¹Ã½N/2+1 
 int*R=(int *) malloc(sizeof(int) * (N/2+1));
 void MERGE(int *A, int p, int q, int r)
 {
@@ -14,12 +14,9 @@ void MERGE(int *A, int p, int q, int r)
 	
 	for (i=1;i<=n1;i++)
   	  L[i-1]=A[p+i-1];
-	//L[n1]=INT_MAX;
- 	//printf("L[n1]=%d\n",L[n1]);
 	
 	for (j=1;j<=n2;j++)
     	R[j-1]=A[q+j];   
-	//R[n2]=INT_MAX;
 
 	i=0;j=0;
 	for (k=p;k<=r;k++)
